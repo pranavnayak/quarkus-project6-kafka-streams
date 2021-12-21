@@ -12,6 +12,9 @@ TBD
 
 
 docker-compose -f docker-compose-local.yaml up
+
 docker exec -it kafka_kafka_1 /bin/bash
+
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic temperature-values --from-beginning
+
 bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic weather-stations --from-beginning
